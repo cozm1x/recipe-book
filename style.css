@@ -1,0 +1,522 @@
+:root{
+    --yellow: #f2c24a;
+    --grey: #eff0e3d8;
+    --green:#59d648;
+    --beige: #f4ead1;
+    --brown:#9a6c3e;
+    --coffee:#e4ac4e;
+    --grad: linear-gradient(to right, #de6262 , #ffb88c);
+
+}
+
+body, html{
+    margin: 0;
+    height: 100%;
+    background-image: var(--grad);
+   
+}
+
+/* login page */
+
+.brand-logo img{
+    width: 350px;
+    margin-left: 150px;
+    left: 550px;
+    margin-top: 0%;
+    top: 0;
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+#llogo{
+    width: 200px;
+    left: 450px;
+    top: 10px;
+}
+
+#blogo{
+    width: 100px;
+    left: 450px;
+}
+
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image:var(--grad);
+    background-size: 100%;
+
+}
+
+
+.login-base-container{
+    width: 80%;
+    height: 600px;
+    margin-top: 80px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 500px auto;
+    background-color:rgb(255, 253, 245);
+}
+
+.login-container{
+    background-color: var(--beige);
+    border: 2px solid black;
+    width: 450px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.login-container p{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.login-container p a{
+    padding-left: 5px;
+}
+
+.form-input label{
+    font-size: 17px;
+    padding-left: 70px;
+}
+
+.form-input input{
+    width: 300px;
+    height: 40px;
+    margin-left: 70px;
+    margin-top: 8px ;
+    margin-bottom: 25px;
+}
+
+.form-input a{
+    font-size: 17px;
+    padding-left: 70px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+
+.checkbox input{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.checkbox label{
+    font-size: 17px;
+}
+
+.submit-button input{
+    width: 130px;
+    height: 50px;
+    border-radius: 25px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    background-color: var(--coffee);
+    border: 1px solid grey;
+}
+
+.submit-button input:hover{
+    color: aliceblue;
+    background-color: var(--brown);
+    box-shadow: 2px 2px 2px rgba(165, 161, 161, 0.829);
+}
+
+
+/* collection page */
+
+.logo{
+    width: 50px;
+}
+
+.s-logo{
+    width: 25px;
+}
+
+.arrow-logo{
+    width: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    z-index: 2;
+}
+
+.top-link-band {
+    display: block;
+    position: relative;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+    background-color: var(--brown);
+}
+
+#chef{
+    width: 500px;
+    margin: auto;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+#user{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 150px;
+    padding-top: 50px ;
+}
+
+#home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 150px;
+    padding-top: 50px ;
+}
+
+.menu-link li{
+    display: inline;
+}
+
+.menu-link{
+margin-left: 60px;
+}
+
+.menu-link a{
+    font-size: 20px;
+    padding: 10px ;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-link {
+    top: 0;
+    left: auto;
+    margin: 0;
+}
+
+.social-link ul{
+    width: 350px;
+    position: absolute;
+    right: 0;
+}
+
+.social-link li{
+    display: inline;
+}
+
+.social-link a, img{
+    padding-left: 10px ;
+    text-decoration: none;
+    width: 40px;
+}
+
+
+.menu-link a:hover{
+    background-color: var(--beige);
+    border-radius: 10px;
+    color: #000;
+}
+
+#selected{
+    background-color: var(--beige);
+    border-radius: 10px;
+    color: #000;
+}
+
+.flex-space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.save-container{
+    width: 75%;
+    border: 1px solid #000;
+    border-radius: 25px;
+    height: 900px;
+    margin-bottom: 150px;
+    background-color: var(--grey);
+}
+
+.vid-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-areas: 
+        'vid1 ...'
+    ;
+}
+
+.post-box{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-areas: 
+        'post1 ...'
+    ;
+}
+
+.bottom-link-band{
+    display: block;
+    position: relative;
+    padding-top: 50px ;
+    bottom: 0;
+    padding-bottom: 100px;
+    background-color: var(--brown);
+}
+
+.general-button{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    background-color: var(--coffee);
+    border: 1px solid grey;
+}
+
+.general-button:hover{
+    color: aliceblue;
+    background-color: var(--brown);
+    box-shadow: 2px 2px 2px rgba(165, 161, 161, 0.829);
+}
+
+/* Recipe part */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+   
+  }
+
+  .mySlides img{
+    margin-right: 0;
+    height: 500px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+
+.video-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.5fr 0.4fr 1fr 2fr 0.5fr 0.4fr 1fr 2fr 0.5fr 0.4fr;
+    grid-template-areas: 
+        'vid'
+        'title'
+        'comment'
+        'clear'
+        'vid'
+        'title'
+        'comment'
+        'clear'
+        'vid'
+        'title'
+        'comment'
+    ; 
+}
+
+#tutorial{
+    height: 1200px;
+}
+
+.vid{
+    grid-area: vid;
+    display: block;
+    left: 0;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-right: 550px;
+}
+
+.title{
+    grid-area: title;
+    margin-top: 350px;
+    margin-left: 25px;
+
+}
+
+.comment{
+    grid-area: comment;
+    margin-top: 450px;
+    margin-left: 25px;
+    border: 1px solid black;
+    padding: 0;
+}
+
+.comment p{
+    display: inline;
+    align-self: center;
+    justify-self:center;
+    font-size: 24px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.clear{
+    grid-area: clear;
+
+}
+
+.post-box img{
+    width: 150px;
+}
+
+.post-box h4{
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #f2f2f2;
+    margin-top: 0%;
+}
+
+#recipe{
+    margin-top: 10px;
+    height: 1500px;
+}
+
+#recipe-title{
+    margin-top: 100px;
+    display: block;
+}
+
+@media only screen and (max-width: 650px){
+    .login-base-container{
+        border: 0px ;
+        grid-template-columns: auto;
+        margin-right: 90px;
+        margin-top: 270px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+   .login-container{
+       margin-left: 100px;
+       
+   }
+
+   .space{
+       display:block;
+   }
+
+   #llogo{
+        width: 400px;
+        left: 0;
+        padding-bottom: 10px;
+        margin-right: 100px;
+    }
+
+   #chef{
+    display: none;
+   }
+
+
+}
